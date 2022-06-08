@@ -1,0 +1,156 @@
+%-------------------------
+% Resume in Latex
+% Author : Tony Kipkemboi
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{}{\Large Tony Kipkemboi}} & Email : \href{mailto:iamtonykipkemboi@gmail.com}{iamtonykipkemboi@gmail.com}\\
+  \href{https://www.linkedin.com/in/tonykipkemboi/}{LinkedIn} $|$ \href{https://www.github.com/tonykipkemboi/}{GitHub} $|$ \href{https://twitter.com/ynot_kip}{Twitter} $|$ {ENS: tonykipkemboi.eth}& Mobile : +1-210-347-7986 \\
+\end{tabular*}
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  	\resumeSubheading
+      {Booz Allen Hamilton}{Arlington, VA}
+      {Data Engineer}{Mar 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Advana Jupiter Developer}
+          {Supporting PMS 505 project with automating data ingestion from disparate sources (Extract Transform Load) using Databricks and S3 as a Data Lake}
+        \resumeItem{Data Engineering}
+          {Completed the AWS Data Engineering Tech Excellence Program where cloud computing services were taught as it relates to Big Data. The capstone project involved deploying an automated data pipeline using AWS CDK (Typescript flavor): loaded CSV \& JSON data files to S3 Bucket (data lake), crawled the raw data using Glue Crawler, created tables and views in Athena for final visualization on QuickSight }
+      \resumeItem{Skills} {\emph{\textbf{AWS-CDK, S3, Athena, QuickSight, Glue, Spark SQL, Lambda, Typescript }}
+      \resumeItemListEnd
+      
+   	\resumeSubheading
+      {Bloomberg L.P.}{Manhattan, NY}
+      {Digital Transformation/Implementations \& Support Associate}{Sep 2021 -- Mar 2022}
+      \resumeItemListStart
+        \resumeItem{Collaborating with Cross-functional Teams}
+          {Defined solution requirements to improve both client-facing and internal platforms by involving User Experience and Engineering teams and other stakeholders}
+        \resumeItem{User Research}
+          {Conducted user research and generated analytical insights that was incorporated into a client-facing Q \& A platform reducing the amount of tickets generated }
+          \resumeItem{Technical Support}
+          {Provided technical guidance and solutions to more than $35$ clients on how to generate new SSL certificates for continuous authentication to access Bloomberg financial data through API's}
+        \resumeItem{Skills} {\emph{\textbf{Python, Splunk, Jupyter Notebook, JIRA, Microsoft Office, Bloomberg Terminal}}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Merck \& Co. Inc.}{West Point, PA}
+      {Data Engineering Intern}{Jun 2021 -- Aug 2021}
+      \resumeItemListStart
+        \resumeItem{Automation}
+          {Implemented a \textbf{scalable delta lake on top of the S3} data lake to make data available for consumption by downstream stakeholders using specified design patterns on Databricks}
+         \resumeItem{Data Skills}
+          {Developed an \textbf{end-to-end batch OLAP (online analytical processing) data pipeline} using data engineering best practices on Databricks with ELN (Electronic Laboratory Notebooks) data from AWS S3 bucket}
+        \resumeItem{Technical Content Creation}
+          {Documented and shared the data engineering process through \textbf{recorded video and written tutorials} in the Data Science Community of Practice forum for other teams to replicate and improve upon their pipelines}
+        \resumeItem{Skills} {\emph{\textbf{Databricks, Spark, SQL, Data, Delta Lakes, AWS(S3), Confluence}}}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {U.S. Army (Medical Research Institute of Infectious Diseases)}{Frederick, MD}
+      {Genomics Research Supervisor \& Soldier}{Jul 2014 -- Sep 2021}
+      \resumeItemListStart
+        \resumeItem{Leadership}
+          {Supervised and directed the daily workflow of 15 military and civilian personnel resulting inconsistent, greater than 98\%, project completion and quarterly department awards}
+        \resumeItem{Organizational Skills}
+        {Led and evaluated quality control within the laboratory leading to 2 successful biennial inspections by The Joint Commission and Center for American Pathologists}
+        \resumeItem{Proactive}
+          {Developed an improved genomics data processing pipeline to automate data transfer to the server using a python script increasing on-time delivery of data by over 90\%}
+        \resumeItem{Skills} {\emph{\textbf{Linux, Python}}}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+ 
+ %-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Pennsylvania}{Philadelphia, PA}
+      {Master's Degree in Computer and Information Technology (part-time)}{2024 (Expected)}
+    \resumeSubheading
+      {Southern New Hampshire University}{Manchester, NH}
+      {Bachelor of Science in Health Sciences}{Jun 2018 -- May 2019}
+      \resumeSubheading
+      {George Washington University}{Washington, DC}
+      {Associates' of Science in Health Sciences}{Feb 2008 -- Nov 2011}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+%-------------------------------------------
+\end{document}
