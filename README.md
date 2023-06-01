@@ -2,4 +2,4 @@
 *My Data Engineering Resume created using LaTeX*
 
 
-![resumepng](pdfs/resumepng.png)
+![resume](files/Resume.pdf)
